@@ -6,5 +6,28 @@ body{
 
 h1{
     font-family: 'DM Serif Display', serif;
-    
+
+}
+
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 6vw;
+}
+.nav-logo{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #1a1814;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.nav-logo span{
+    color: #c8a96e;
 }
