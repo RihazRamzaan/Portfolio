@@ -42,3 +42,34 @@ window.addEventListener('scroll', function() {
     }
   });
 });
+
+
+const words = [ 'Problem Solver.', 'Full Stack Developer.', 'Open Source Enthusiast.'];
+let wordIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const current = words[wordIndex];
+
+  if (isDeleting) {
+    letterIndex--;
+  } else {
+    letterIndex++;
+  }
+
+  document.getElementById('typing').textContent = current.substring(0, letterIndex);
+
+  if (!isDeleting && letterIndex === current.length) {
+    setTimeout(function() { isDeleting = true; }, 1500);
+  }
+
+  if (isDeleting && letterIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  setTimeout(type, isDeleting ? 60 : 100);
+}
+
+type();
