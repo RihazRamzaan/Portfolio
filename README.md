@@ -4,7 +4,7 @@ A personal portfolio website built from scratch using vanilla HTML, CSS, and Jav
 
 ## Live Demo
 
-[View Portfolio](https://RihazRamzaan.github.io/portfolio)
+[View Portfolio](https://rihazramzaan.github.io/Portfolio/)
 
 ## Built With
 
