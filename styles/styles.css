@@ -384,6 +384,36 @@ nav.scrolled {
   transform: translateY(0);
 }
 
+.go-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background: #1a1814;
+  color: #faf8f4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(26, 24, 20, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease, background 0.2s ease;
+  z-index: 99;
+}
+
+.go-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top-btn:hover {
+  background: #a8883e;
+  transform: translateY(-3px);
+}
+
 /* Mobile Responsive Adjustments */
 @media screen and (max-width: 768px) {
 
@@ -437,5 +467,12 @@ nav.scrolled {
 
   .section-title {
     font-size: 2.2rem;
+  }
+
+  .go-top-btn {
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
   }
 }
